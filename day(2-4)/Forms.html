@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+  <style>
+    .enhance{
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <form action="process.js">
+    <div>
+      <label for="email">Email:</label><br>
+      <input type="email" name="email" id="email">
+    </div>
+    <br>
+    <div>
+      <label for="password">Password:</label><br>
+      <input type="password" name="password" id="password">
+    </div>
+    <br>
+    <div>
+      <label for="age">Age:</label><br>
+      <select name="age" id="age">
+        <option value="select age">select age</option>
+        <option value="less than 18">less than 18</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="more than 30">more than 30</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <label for="about you">Tell us a little about you:</label><br>
+      <textarea name="about you" id="about you" cols="50" rows="5"></textarea><br>
+    </div>
+    <br>
+    <div>
+      <label for="term of service"></label>
+      <input type="checkbox" name="term of service" value="terms of service" 
+      id="terms of service"> I agree to the  <span class="enhance"><u>terms of service </span> </u>
+    </div>
+    <br>
+    <div>
+      <button type="submit">Sign up</button>
+    </div>
+  </form>
+</body>
+</html>

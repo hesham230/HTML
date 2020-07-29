@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning-3</title>
+  <style>
+    .inner{
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: darkcyan;
+      border: 3px solid black;
+      
+    }
+    #outer{
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      background: lightgreen;
+      top: 10%;
+      left: 35%;
+      bottom: 50%;
+      border: 3px solid black;
+    }
+    .three{
+      width: 350px;
+      height: 90px;
+      position: absolute;
+      background: red;
+      top: 22%;
+      border: 3px solid black;
+    }
+    .four{
+      width: 80px;
+      height: 250px;
+      position: absolute;
+      background: white;
+      top: 10px;
+      left: 20%;
+      border: 3px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="inner">
+    Div One
+    <div id="outer">Div Two</div>
+  </div>
+  <div class="three">Div Three</div>
+  <div class="four">Div Four</div>
+</body>
+</html>
