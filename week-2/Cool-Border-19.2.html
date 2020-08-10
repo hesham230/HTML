@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool Border 19.2</title>
+  <style>
+   
+    body{
+      background: black;
+      margin-left: 450px;
+      margin-top: 200px;
+    }
+   
+    #content {
+      position:relative;
+      width:360px;
+      height:200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #content h2 {
+      position: absolute;
+      display: flex;
+      padding: 10px;
+      background-color: black;
+      color: white;
+    } 
+#content:before, 
+#content:after, 
+#content>:last-child:before, 
+#content>:last-child:after {
+    position: absolute;
+    width: 60px; 
+    height: 50px;
+    border-color: red; 
+    border-style: solid;
+    content: ' ';
+}
+
+#content:before {
+    top: 10px;
+    left: 10px;
+    /* left top border */
+    border-width: 5px 0 0 5px
+}
+
+#content:after {
+    top: 10px;
+    right: 10px;
+    /* right top border */
+    border-width: 5px 5px 0 0
+}
+
+#content>:last-child:before {
+    bottom: 10px;
+    right: 10px;     
+    /* right down border */
+    border-width: 0 5px 5px 0
+}
+
+#content>:last-child:after {
+    bottom: 10px;
+    left: 10px;
+    /* left down border */
+    border-width: 0 0 5px 5px
+}
+
+  </style>
+</head>
+<body>
+  <div id="content">
+    <h2>Cool Border</h2>
+  <p></p>
+  </div>
+</body>
+</html>

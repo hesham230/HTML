@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cookie-2</title>
+  <style>
+    *,
+    ::before,
+    ::after{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+
+    body{
+      height: 200vh;
+      background: rgb(212, 211, 211);
+    }
+    .page{
+      font-size: 1.8vw;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      grid-template-rows: 5fr 1fr;
+      padding: 1rem;
+      color: #fff;
+      place-self: center;
+      position: fixed;
+    }
+    .msg{
+      grid-row: 2 / span 1;
+      grid-column: 2 / span 1;
+      background: #3c3939;
+      padding: 1rem;
+      align-self: end;
+      border-radius: 0.8rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="msg">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat rem mollitia illum accusamus, 
+        eaque illo reiciendis facilis commodi libero facere!</p>
+        <div class="button"><a href="#">OK</a></div>
+    </div>
+  </div>
+</body>
+</html>

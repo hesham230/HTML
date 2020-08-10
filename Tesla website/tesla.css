@@ -1,0 +1,128 @@
+html { 
+  background: url('img/model-3-hero-desktop-v2.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+}
+
+#container {
+	margin: auto;
+	width: 1300px;
+}
+
+#logo img {
+	width: 150px;
+	float: left;
+	position: absolute;
+}
+
+#left-nav-buttons {
+	float: left;
+	margin-left: 205px;
+}
+
+#right-nav-buttons {
+	margin-left: 805px;
+}
+
+#right-nav-buttons a {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.nav-button {
+	color: white;
+	text-decoration: none;
+  margin-left: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+	margin-top: 23px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  padding: 8px;
+  
+}
+
+#content #banner {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+}
+
+#content #marketing-content {
+	margin-top: 20px;
+	text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#line-1 {
+	font-size: 2.2em;
+	margin-bottom: 10px;
+}
+
+.list {
+	text-align: center;
+  margin-top: 300px;
+}
+
+.list ul{
+	list-style: none;
+}
+
+.list ul li {
+	display: inline;
+	padding: 50px;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: xx-large;
+	border-left: 1px solid white;
+  
+}
+
+.list-2 {
+	text-align: center;
+  margin-top: 10px;
+}
+
+.list-2 ul{
+	list-style: none;
+}
+
+.list-2 ul li {
+	display: inline;
+	padding: 170px;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif; 
+	
+}
+
+.list-2 ul li .x{
+	display: inline;
+	padding: 120px;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif; 
+	
+}
+
+
+
+.btn-21{
+	background: rgb(161, 161, 161);
+	color: white;
+	border: 3px solid white;
+	padding: 10px 20px;
+	border-radius: 2.2em;
+}
+.btn-21:hover{
+	background: white;
+	color: grey;
+}
+
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS transitions-21.1</title>
+  <style>
+   body{
+     box-sizing: border-box;
+     display: flex;
+     justify-content: space-around;
+    
+     
+   }
+
+   .btn{
+      text-decoration: none;
+      border: 1px solid black;
+      padding: 40px 80px;
+      position: relative;
+   }
+   /* TranslateY */
+   .translateY{
+     overflow: hidden;
+   }
+   .translateY::before{
+     content: "YEAH";
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     top:0;
+     left:0;
+     height: 100%;
+     width: 100%;
+     background: orangered;
+     transform: translateY(-100%);
+     transition: all 1s;
+   }
+
+   .translateY:hover::before{
+    transform: translateY(0);
+   }
+
+    /* TranslateX  */
+   .translateX{
+     overflow: hidden;
+     transition: color 2s;
+   }
+
+   .translateX::before{
+     content: "";
+     position: absolute;
+     left: 0;
+     top: 0;
+     background: black;
+     height: 100%;
+     width: 100%;
+    transform: translateX(-100%);
+    transition: all 1s;
+    z-index: -1;
+   }
+
+   .translateX:hover::before{
+     transform: translateX(0);
+   }
+
+   .translateX:hover{
+     color: white;
+   }
+
+   /* Rotate */
+   .rott{
+     overflow: hidden;
+     transition: color 2s;
+   }
+   
+   .rott::before{
+     content: "";
+     position: absolute;
+     left: 1px;
+     top: 0;
+     background: yellow;
+     height: 100%;
+     width: 100%;
+     transform: rotate(0deg);
+     transition: all 1s;
+     z-index: -1;
+   }
+
+   .rott:hover::before{
+     transform: rotate(90deg);
+   }
+
+   .rott:hover{
+     color: black;
+   }
+
+   
+
+  
+
+  </style>
+</head>
+<body>
+  <a class="btn translateY" href="#">TranslateY</a>
+  <a class="btn translateX" href="#">TranslateX</a>
+  <a class="btn rott" href="#">Rotate</a>
+</body>
+</html>

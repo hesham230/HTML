@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex basics-3</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    .flex-container{
+      background-color: rgb(244, 245, 188);
+      display: flex;
+      flex-direction: row;
+      align-items:flex-end;
+      height: 50vh;
+      justify-content: center;
+      padding-left: 77%;
+    }
+    .item{
+      background: #f4f4f4;
+      /* border: #ccc solid 2px; */
+      /* padding: 10px; */
+      text-align: left;
+      width: 100px;
+      height: 100px;
+    }
+    .item1{
+      background-color: green;
+      
+    }
+    .item2{
+      background-color: blue;
+      
+    }
+    .item3{
+      background-color: red;
+   
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+  </div>
+</body>
+</html>

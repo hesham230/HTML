@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Positioning-2</title>
-  <style>
-     .inner{
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      background: darkcyan;
-    }
-    #outer{
-      width: 50px;
-      height: 50px;
-      position: sticky;
-      background: lightgreen;
-      top: 10px;
-    }
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="itc" />
+    <style>
+      .container {
+        display: inline-block;
+      }
+      #outer {
+        width: 100px;
+        height: 100px;
+        background: darkcyan;
 
-  </style>
-</head>
-<body>
+        margin: 50px;
+      }
 
-  <div class="inner">
-    Box Title
-    <div id="outer"></div>
-  </div>
+      #inner {
+        width: 50px;
+        height: 50px;
+        background: lightgreen;
+        position: relative;
+        top: 10px;
+      }
+    </style>
+  </head>
 
-</body>
+  <body>
+    <div class="container">
+      <div id="outer">
+        <div class="x">Box Title</div>
+        <div id="inner"></div>
+      </div>
+    </div>
+
+    <!--  Q: explain in your own words what is the problem.
+              A: the inner box is positioned in relation to the body, which is the closest ancestor. in order to postion it in relation to the outer box we need to add postion to the outer box.
+         -->
+  </body>
 </html>

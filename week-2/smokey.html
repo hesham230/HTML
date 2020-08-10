@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>smokey</title>
+  <style>
+    body{
+      min-height: 100vh;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    ul{
+      display: flex;
+      font-size: 6rem;
+      color: white;
+      list-style: none;
+    }
+
+    li {
+      transition: all 1s;
+    }
+
+    ul:hover li{
+      transform: rotate(45deg)
+      translateY(-100px);
+      opacity: 0;
+      filter:blur(20px);
+      
+    }
+
+    li:nth-child(2){
+      transition-delay: 0.4s;
+    }
+    li:nth-child(3){
+      transition-delay: 0.8s;
+    }
+    li:nth-child(4){
+      transition-delay: 1.2s;
+    }
+    li:nth-child(5){
+      transition-delay: 1.6s;
+    }
+    li:nth-child(6){
+      transition-delay: 2.0s;
+    }
+
+  </style>
+</head>
+<body>
+  <ul>
+    <li>S</li>
+    <li>M</li>
+    <li>O</li>
+    <li>K</li>
+    <li>E</li>
+    <li>Y</li>
+  </ul>
+</body>
+</html>

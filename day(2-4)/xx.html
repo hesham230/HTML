@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Float Layout</title>
+  <title>Document</title>
   <style>
-
-    *{
+        *{
       box-sizing: border-box;
     }
 
@@ -33,21 +32,21 @@
     }
 
     #box-1{
-      float: top;
+      display: flex;
       background: orange;
       text-align: center;
     }
 
     #box-2{
       float: left;
-      width:275px;
-      height:450px;
+      width:280px;
+      height:400px;
       background: green;
     }
     #box-3{
       float: right;
       width:690px;
-      height:450px;
+      height:400px;
       background: purple;
       text-align: right;
     }
@@ -56,36 +55,16 @@
       background: blue;
       text-align: center;
     }
-
-    @media(max-width: 300px){
-      #box-1{
-      display: flex;
-      background: orange;
-      text-align: center;
-      }
-      
-      #box-3{
-      display: flex;
-      width:690px;
-      height:450px;
-      background: purple;
-      text-align: right;
-      }
-      #box-4{
-      background: blue;
-      text-align: center;
-      }
-    }
-
   </style>
 </head>
 <body>
-  <div class="container">
-    <div id="box-1" class="box">Header</div>
-    <div id="box-2" class="box">Side</div>
-    <div id="box-3" class="box">Main</div>
-    <div class="clr"></div>
-    <div id="box-4" class="box">Footer</div>
-  </div>
+  <body>
+    <div class="container">
+      <div id="box-1" class="box">Header</div>
+      <div id="box-2" class="box">Side</div>
+      <div id="box-3" class="box">Main</div>
+      <div class="clr"></div>
+      <div id="box-4" class="box">Footer</div>
+    </div>
 </body>
 </html>

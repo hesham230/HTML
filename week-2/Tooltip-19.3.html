@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tooltip 19.3</title>
+  <style>
+   
+    *{
+      padding: 2px;
+      margin: 0px;
+    }
+    
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    color: blueviolet;
+ }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: yellow;
+    color: #333;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  </style>
+</head>
+
+<body>
+  <p>Lorem ipsum dolor <div class="tooltip"> sit amet  <span class="tooltiptext">bad tooltip</span></div>consectetur adipisicing elit. 
+    Inventore explicabo voluptate suscipit optio quos labore modi sequi 
+    repudiandae unde, minima itaque odit accusamus officia voluptatum. 
+    Porro aspernatur eum suscipit placeat dignissimos, 
+    nesciunt est sit autem quasi omnis esse! Fugiat quisquam doloremque et 
+    magni itaque, adipisci id inventore perferendis veritatis, excepturi a 
+    nihil quod vero dolor <div class="tooltip"> tenetur voluptates ullam  <span class="tooltiptext"> good tooltip</span> </div>commodi maiores ducimus 
+    facere non? Aspernatur, delectus! Natus sequi tempora laborum, sapiente 
+    vel quae soluta cumque nulla<div class="tooltip"> necessitatibus<span class="tooltiptext">something!!</span> </div> quos obcaecati omnis porro 
+    ratione, distinctio ea doloribus vitae. Tenetur veniam quidem modi odit,
+     deserunt sed repellat doloremque! Adipisci,
+     modi nemo. Illo, aliquam culpa!</p>
+</body>
+</html>
